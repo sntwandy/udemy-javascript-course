@@ -1,3 +1,4 @@
+//alert('Im an alert');
 let a = 10,
     b = 20,
     c = 'Hello ',
@@ -10,3 +11,5 @@ const greeting = c + d;
 //console.log({a, b ,c ,d , x})
 
 c = 'Hello again!';
+
+var myName = 'Megan';
