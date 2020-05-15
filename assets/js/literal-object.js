@@ -10,7 +10,7 @@ let character = {
     clothes: ['Pants', 'Shoes', 'Rings', 'Dress'],
     direction: {
         zip: '10880, 90265',
-        ubication: 'Malibu, California',
+        location: 'Malibu, California',
     },
     'last-movie': 'Inifinity War',
 };
