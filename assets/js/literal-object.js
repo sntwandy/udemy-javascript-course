@@ -29,3 +29,25 @@ const x = 'alive';
 console.log('Alive:', character[x]);
 
 console.log('Last movie:', character['last-movie']);
+
+// More details
+
+delete character.age;
+
+console.log({character});
+
+// new property
+character.married = true;
+
+const entriesPares = Object.entries(character);
+
+console.log(entriesPares);
+
+// Don't modify
+Object.freeze(character);
+
+const properties = Object.getOwnPropertyNames(character);
+console.log(properties);
+
+const values = Object.values(character);
+console.log(values);
