@@ -18,3 +18,15 @@ if (day === 0) {
 } else {
     console.log('It is not Sunday');
 }
+
+const lettersDay = {
+    0: 'Sunday',
+    1: 'Monday',
+    2: 'Tuesday',
+    3: 'Wednesday',
+    4: 'Thursday',
+    5: 'Friday',
+    6: 'Saturday',
+};
+
+console.log(lettersDay[6] || 'Day is not correct');
