@@ -34,3 +34,16 @@ console.log(false || false); // false
 console.log(returnTrue() || returnFalse()); // true
 
 console.warn('Assignments');
+
+const imUndefined = undefined;
+const imNull = null;
+const imFalse = false;
+
+const a1 = true && 'Hello World!' && 150;
+const a2 = 'Hello' && 'World!' && imFalse;
+
+const a3 = imFalse || 'Im not false';
+const a4 = imFalse || imUndefined || imNull || 'Im not false again!' || true;
+const a5 = imFalse || imUndefined || returnTrue() || 'Im not false again!' || true;
+
+console.log({a1, a2, a3, a4, a5});
