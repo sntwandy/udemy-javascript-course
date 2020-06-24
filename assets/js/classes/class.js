@@ -2,12 +2,24 @@ class Person {
     // name = '';
     // code = '';
     // phrase = '';
+    static _count = 0;
+    static get counter() {
+        return Person._count + ' instances';
+    };
+
+    static message() {
+        console.log(this.name); // Undefined
+        console.log('Hello everyone, I am a static method');
+    }
+
     food = '';
 
     constructor(name = 'No name', code = 'No code', phrase = 'No phrase') {
         this.name = name;
         this.code = code;
         this.phrase = phrase;
+
+        Person._count++;
     };
 
     set setFavoriteFood(food) {
@@ -42,3 +54,9 @@ darcy.setFavoriteFood = 'Spaguetti';
 console.log(darcy);
 
 console.log(darcy.getFavoriteFood);
+
+Person._count = 2;
+console.log(`Static counter: ${Person._count}`);
+console.log(Person.counter);
+
+console.log(Person.message());
